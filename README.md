@@ -38,7 +38,7 @@ Input:  "race a car"
 ```
 🔁 Not the same both ways → ❌ false
 
-### 🌫️ Example 3
+#### 🌫️ Example 3
 ```
 Input:  " "
 ```
