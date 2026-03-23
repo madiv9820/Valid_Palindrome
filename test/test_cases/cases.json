@@ -1,0 +1,152 @@
+[
+  {
+    "title": "✨ Classic Palindrome Sentence",
+    "input": "A man, a plan, a canal: Panama",
+    "output": true,
+    "description": "🧼 Valid palindrome after removing spaces, punctuation, and converting to lowercase."
+  },
+  {
+    "title": "❌ Non-Palindrome String",
+    "input": "race a car",
+    "output": false,
+    "description": "🔁 String is not the same when reversed after cleaning."
+  },
+  {
+    "title": "🌫️ Only Spaces",
+    "input": " ",
+    "output": true,
+    "description": "🤯 Empty string after cleaning is considered a palindrome."
+  },
+  {
+    "title": "🔤 Single Character",
+    "input": "a",
+    "output": true,
+    "description": "✅ A single character is always a palindrome."
+  },
+  {
+    "title": "🔠 Mixed Case Palindrome",
+    "input": "Madam",
+    "output": true,
+    "description": "🔄 Case-insensitive check results in a valid palindrome."
+  },
+  {
+    "title": "🔢 Alphanumeric Palindrome",
+    "input": "1a2 2a1",
+    "output": true,
+    "description": "✨ Numbers and letters together can form a palindrome."
+  },
+  {
+    "title": "🚫 Special Characters Only",
+    "input": "@#$%",
+    "output": true,
+    "description": "🧼 All characters are removed, resulting in an empty palindrome."
+  },
+  {
+    "title": "🇺🇸 Palindrome With Symbols",
+    "input": "No 'x' in Nixon",
+    "output": true,
+    "description": "✨ Valid palindrome after ignoring symbols and case."
+  },
+  {
+    "title": "📏 Long Non-Palindrome",
+    "input": "This is definitely not a palindrome",
+    "output": false,
+    "description": "❌ Clearly not symmetric after cleaning."
+  },
+  {
+    "title": "🔢 Palindrome With Numbers",
+    "input": "12321",
+    "output": true,
+    "description": "✅ Numeric palindrome remains valid."
+  },
+  {
+    "title": "🧠 Palindrome With Mixed Noise",
+    "input": "Able!!! was I @@ ere I saw Elba",
+    "output": true,
+    "description": "✨ Classic palindrome with heavy punctuation and mixed casing."
+  },
+  {
+    "title": "🧹 Trailing and Leading Spaces",
+    "input": "   racecar   ",
+    "output": true,
+    "description": "🚫 Spaces at both ends should be ignored."
+  },
+  {
+    "title": "⚠️ Almost Palindrome",
+    "input": "abccbx",
+    "output": false,
+    "description": "❌ Single mismatch breaks palindrome property."
+  },
+  {
+    "title": "🔢 Even Length Palindrome",
+    "input": "1221",
+    "output": true,
+    "description": "✅ Even-length numeric palindrome."
+  },
+  {
+    "title": "🔢 Odd Length Palindrome",
+    "input": "12321",
+    "output": true,
+    "description": "✅ Odd-length numeric palindrome."
+  },
+  {
+    "title": "🔤 Case Sensitive Trap",
+    "input": "Aa",
+    "output": true,
+    "description": "🔄 Case should be ignored, making it a palindrome."
+  },
+  {
+    "title": "🚫 Alpha Numeric Non-Palindrome",
+    "input": "1a2b3",
+    "output": false,
+    "description": "❌ Alphanumeric string that is not symmetric."
+  },
+  {
+    "title": "🔁 Repeated Characters",
+    "input": "!!!!aaaa!!!!",
+    "output": true,
+    "description": "🧼 Special characters removed, leaving a palindrome."
+  },
+  {
+    "title": "🚗 Long Palindrome Sentence",
+    "input": "Was it a car or a cat I saw?",
+    "output": true,
+    "description": "✨ Valid palindrome with spaces and punctuation."
+  },
+  {
+    "title": "🔢 Numbers With Spaces",
+    "input": "1 2 3 2 1",
+    "output": true,
+    "description": "🧹 Spaces ignored, numeric palindrome holds."
+  },
+  {
+    "title": "🧪 Mixed Invalid Characters",
+    "input": "abc@#cba",
+    "output": true,
+    "description": "✨ Special characters removed, resulting in palindrome."
+  },
+  {
+    "title": "⚡ One Mismatch In Middle",
+    "input": "abca",
+    "output": false,
+    "description": "❌ Mismatch in middle prevents palindrome."
+  },
+  {
+    "title": "🟰 All Same Characters",
+    "input": "aaaaaaa",
+    "output": true,
+    "description": "✅ Same character repeated is always a palindrome."
+  },
+  {
+    "title": "🌪️ Long Non-Palindrome With Noise",
+    "input": "Random text!! with ## noise 123",
+    "output": false,
+    "description": "❌ Cleaning still results in non-palindrome."
+  },
+  {
+    "title": "🔀 Mixed Case and Digits Palindrome",
+    "input": "A1b2B1a",
+    "output": true,
+    "description": "✨ Case-insensitive alphanumeric palindrome."
+  }
+]
