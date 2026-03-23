@@ -1,4 +1,5 @@
 from libcpp.string cimport string
+from libcpp cimport bool
 
 # 🔗 Declare external C++ class and method from header file
 cdef extern from 'solution.hpp':
