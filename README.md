@@ -62,4 +62,10 @@ This problem is a classic test of:
 - 🧠 String manipulation skills
 - 🔍 Attention to detail (handling edge cases!)
 - ⚡ Writing efficient logic for large inputs
+
+## 🧠 Approaches
+| **Approach**            | **Time** | **Space** | **Idea**                  |
+| ------------------- | ---- | ----- | --------------------- |
+| [**🧹 Clean & Compare**](https://github.com/madiv9820/Valid_Palindrome/tree/Approach_01-Clean_and_Compare) | **`O(n)`** | **`O(n)`**  | Build new string      |
+| [**👈👉 Skip & Compare**](http://github.com/madiv9820/Valid_Palindrome/tree/Approach_02-Skip_and_Compare) | **`O(n)`** | **`O(1)`**  | In-place two pointers |
 ---
