@@ -1,65 +1,65 @@
-# [🔁 Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/?envType=study-plan-v2&envId=top-interview-150)
+# Valid Palindrome - 👈👉 Skip & Compare
 
-### 🧩 Problem Overview
-A **palindrome** is a string that reads the same forward and backward — simple, right? 🤔
+### 💡 Intuition
+Instead of creating a new cleaned string 🧹 (like in the previous approach),
+we can **optimize space** by working directly on the original string.
 
-But here’s the twist 👇
-Before checking if the string is a palindrome, you must:
-- 🔡 Convert all uppercase letters to lowercase
-- 🚫 Remove all non-alphanumeric characters (like spaces, punctuation, symbols, etc.)
+👉 The idea is simple:
+- Use **two pointers** from both ends 👈👉
+- **Skip unwanted characters on the fly** 🚫
+- Compare only valid characters 🔤🔢
 
-Only **letters (a–z)** and **digits (0–9)** are allowed in the final check!
+### ⚙️ Approach
+#### 👈👉 Step 1: Initialize Two Pointers
+- **`start`** → beginning of string
+- **`end`** → end of string
 
-### 🎯 Goal
-Given a string `s`, determine:
+#### 🚫 Step 2: Skip Non-Alphanumeric Characters
+- If character is not:
+    - alphabet 🔤
+    - digit 🔢 <br>👉 Move the pointer forward/backward
 
-👉 Is it a palindrome after cleaning it?
-- ✅ Return true if it is
-- ❌ Return false otherwise
+#### 🔽 Step 3: Compare Characters
+- Convert both characters to lowercase
+- Check: **`s[start] == s[end]`**
+- If mismatch ❌ → return **`false`**
+- If match ✅ → move both pointers inward
 
-### 🧪 Examples
-#### ✨ Example 1
-```
-Input:  "A man, a plan, a canal: Panama"
-```
-🧹 After cleaning:
-```
-"amanaplanacanalpanama"
-```
-🔁 Reads same forward & backward → ✅ true
+#### 🔁 Step 4: Continue Until Pointers Meet
+- If all comparisons pass → it's a palindrome ✅
 
-#### ❌ Example 2
-```
-Input:  "race a car"
-```
-🧹 After cleaning:
-```
-"raceacar"
-```
-🔁 Not the same both ways → ❌ false
+### 🧠 Why This Works
+We **ignore irrelevant characters during traversal**, so:
+- No need to build a new string 📦
+- Same correctness, better efficiency 🚀
 
-#### 🌫️ Example 3
+Example:
 ```
-Input:  " "
+"A man, a plan, a canal: Panama"
 ```
-🧹 After cleaning:
+👉 Compared as:
 ```
-""
+a == a
+m == m
+...
 ```
-🤯 Empty string is considered a palindrome → ✅ true
 
-### 🧠 Key Insights
-- **🧼 Sanitization is crucial** — ignore everything except letters and numbers
-- 🔁 Palindrome check happens **after cleaning**, not before
-- 🧘 Even an **empty string counts as a palindrome**
+### 📊 Complexity Analysis
+#### ⏱️ Time Complexity: `O(n)`
+- Each character is visited at most once <br> 👉 Overall: **`O(n)`**
 
-### 📌 Constraints
-- 🧵 **`1 <= s.length <= 2 * 10⁵`**
-- 🔤 String contains only printable ASCII characters
+#### 🧠 Space Complexity: `O(1)` ⭐
+- No extra data structures used <br> 👉 Fully in-place solution
 
-### 🚀 Why This Problem Matters
-This problem is a classic test of:
-- 🧠 String manipulation skills
-- 🔍 Attention to detail (handling edge cases!)
-- ⚡ Writing efficient logic for large inputs
+### ✨ Pros & Cons
+#### ✅ Pros
+- 🚀 Optimal space usage (O(1))
+- ⚡ Efficient and fast
+- 🧠 Strong interview solution
+- 👈👉 Classic two-pointer pattern
+
+#### ❌ Cons
+- Slightly more complex logic than simple approach 🤏
+- Requires careful pointer handling
+
 ---
